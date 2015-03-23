@@ -9,9 +9,12 @@
 .row-body {
 	margin-top: 100px;
 	float: left;
+	width: 100%;
 	}
 
-
+.row {
+    max-width: none;
+}
 
 /*
  Text color for the nav
@@ -21,8 +24,12 @@
     background-color: #245f65;
 	}
 
-
-
+/*
+ * Border for nav
+ */
+.columns {
+    border:1px solid #000;
+}
 
 
 
