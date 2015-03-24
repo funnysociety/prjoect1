@@ -1,20 +1,102 @@
 @import "settings";
 @import "foundation";
 
+
+a { color: white; }
+a:active { color: #d83c3c; }
+a:visited { color: white; }
+a:hover { color: #a6923a; }
+
+ul {
+     list-style-type: none;
+     height: 50px;
+     padding-top: 9px;
+     overflow: hidden;
+     white-space: nowrap;
+}
+
+li {
+     display: inline;
+     padding-right: 20px;
+}
+
+
 /*
  Margins for the header 
  */
 
-	
-.row-body {
-	margin-top: 100px;
-	float: left;
-	width: 100%;
+.row-body { padding-top: 50px; }
+	@media screen and (max-width: 768px) {
+    body { padding-top: 0px; }
 	}
 
+/*
+ * overide max width in foundation.css
+ */
 .row {
     max-width: none;
 }
+
+/*
+ * overide column padding in foundation.css
+ */
+.column, .columns {
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+/*
+ Mobile title container
+ */
+.mobile-title {
+	display: -webkit-flex;
+	display: flex;
+    padding-left: 10px;
+    align-items: center;
+	color: #ffffff;
+    background-color: #245f65;
+    height: 50px;
+    font-size: 30px;
+	}
+	
+/*
+ Mobile logo container
+ */
+.mobile-logo-container {
+	display: -webkit-flex;
+	display: flex;
+    padding-left: 10px;
+    align-items: center;
+	color: #ffffff;
+    background-color: #245f65;
+    height: 50px;
+	}
+	
+/*
+ Mobile menu container
+ */
+.mobile-menu-container {
+	display: -webkit-flex;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	color: #ffffff;
+    height: 50px;
+	}
+
+
+/*
+ Logo container
+ */
+.logo-nav-box {
+	display: -webkit-flex;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	color: #ffffff;
+    background-color: #245f65;
+    height: 50px;
+	}
 
 /*
  Text color for the nav
@@ -31,28 +113,62 @@
     border:1px solid #000;
 }
 
+/*
+ * This is the nav list container for desktop
+ */
+.nav-list-desk {
+	display: -webkit-flex;
+    display: flex;
+    height: 50px;
+    padding: 2px;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+
+
+/*
+ * This is the container for desktop search
+ */
+.search-box-nav-desk {
+	display: -webkit-flex;
+    display: flex;
+    padding: 7px;
+    -webkit-flex-direction: row; 
+    flex-direction: row;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+/*
+ * This is the container for mobile search
+ */
+.row-search {
+	display: -webkit-flex;
+    display: flex;
+    margin-top: 50px;
+}
 
 
 /* Form wrapper styling */
 .form-wrapper {
-    width: 370px;
-    padding: 15px;
-    float: left;   
-    margin: 10px;
-    background: #444;
+	display: inherit;
+    width: 100%;
+    padding: 7px; 
+    margin: 7x;
     background: rgba(0,0,0,.2);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
 }
  
 /* Form text input */
  
 .form-wrapper input {
-    width: 230px;
+    width: 100%;
     height: 20px;
-    padding: 10px ;
-    float: left;   
-    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    padding: 10px ; 
+    margin: 0;
     border: 0;
     background: #eee;
     border-radius: 3px 0 0 3px;     
@@ -65,9 +181,10 @@
 }
  
 .form-wrapper input::-webkit-input-placeholder {
-   color: #999;
-   font-weight: normal;
-   font-style: italic;
+	margin: 0;
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
 }
  
 .form-wrapper input:-moz-placeholder {
@@ -84,6 +201,7 @@
  
 /* Form submit button */
 .form-wrapper button {
+	margin: 0;
     overflow: visible;
     border: 0;
     padding: 0;

@@ -14,7 +14,7 @@
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
 
         <link rel="stylesheet" href="css/foundation.css" />
-        <link rel="stylesheet" href="css/app.css?e">
+        <link rel="stylesheet" href="css/app.css?">
         <script src="js/vendor/modernizr.js"></script>
 
         <!-- Calls icons from root -->
@@ -29,20 +29,29 @@
             <div class="row-nav-container show-for-small-up"> <!--This is the header nav container-->
  
                             <div class="row show-for-small-only"> <!--This is the mobile nav-->
-                                <div class="small-8 medium-0 large-0 columns"><img alt='' src="main/images/logos/society_logo_32.png"></div> <!--This is the logo-->
-                                <div class="small-4 medium-0 large-0 columns">menu</div> <!--This is mobile menu-->
+                                <div class="mobile-logo-container small-10 medium-0 large-0 columns"><img alt='' src="main/images/logos/society_logo_32.png"></img>
+                                <div class="mobile-title">FUNNY SOCIETY</div>	
+                                </div>
+                                <div class="mobile-menu-container small-2 medium-0 large-0 columns">menu</div> <!--This is mobile menu-->
                             </div>
 
 
                             <div class="row show-for-medium-up"> <!--This is tablet & desktop nav-->
-                                <div class="small-0 medium-1 large-1 columns"><img alt='' src="main/images/logos/society_logo_32.png" /></div> <!--This is the logo-->
-                                <div class="small-0 medium-5 large-5 columns"> <!--This is the desktop navigation list-->
-                                    <span><a href="#">One&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
-                                    <span><a href="#">Two&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
-                                    <span><a href="#">Three&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
-                                    <span><a href="#">Four&nbsp;&nbsp;&nbsp;&nbsp;</a></span>
+                                <div class="logo-nav-box small-0 medium-1 large-1 columns"><img alt='' src="main/images/logos/society_logo_32.png" /></div> <!--This is the logo-->
+                                <div class="nav-list-desk small-0 medium-8 large-8 columns"> <!--This is the desktop navigation list-->
+                                    <ul>
+									    <li><a href="#" title="Performers">Performers</a></li>
+									    <li><a href="#" title="Venues">Venues</a></li>
+									    <li><a href="#" title="Video">Video</a></li>
+									    <li><a href="#" title="Podcasts">Podcasts</a></li>
+									    <li><a href="#" title="Shows">Shows</a></li>
+									    <li><a href="#" title="Festivals">Festivals</a></li>
+									    <li><a href="#" title="Calendar">Calendar</a></li>
+									    <li><a href="#" title="About">About</a></li>
+									    <li><a href="#" title="Contact">Contact</a></li>
+								  	</ul>
                                 </div>
-                                <div class="small-0 medium-6 large-6 columns"> <!--This is search-->
+                                <div class="search-box-nav-desk small-0 medium-3 large-3 columns"> <!--This is search-->
                                     <form class="form-wrapper cf">
                                         <input type="text" placeholder="Search here..." required>
                                         <button type="submit">Search</button>
@@ -56,7 +65,14 @@
         </div>
 
         <div class="row-search show-for-small-only"> <!--This is the mobile search container-->
-            <div class="small-12 medium-0 large-0 columns">Mobile search here</div> <!--This is the search-->
+            <div class="small-12 medium-0 large-0 columns"> <!--This is the search-->
+            	<div class="search-box-nav-desk small-0 medium-3 large-3 columns"> <!--This is search-->
+                                    <form class="form-wrapper cf">
+                                        <input type="text" placeholder="Search here..." required>
+                                        <button type="submit">Search</button>
+                                    </form>
+                                </div>
+			</div>
         </div>
 
         <div class="row-body">
